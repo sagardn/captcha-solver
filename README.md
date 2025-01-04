@@ -1,2 +1,2 @@
-# captcha-solver
-for solving h captcha
+# How to solve h captcha
+for solving 
