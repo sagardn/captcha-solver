@@ -1,2 +1,2 @@
-# How to solve h captcha
+# How to solve captcha
 for solving 
