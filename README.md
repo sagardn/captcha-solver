@@ -30,3 +30,9 @@ A powerful and flexible CAPTCHA solving toolkit designed for automation workflow
 - Slide CAPTCHA  
 
 ---
+
+## 📞 Contact
+
+[![Telegram](https://img.shields.io/badge/Telegram-Contact-blue?style=for-the-badge&logo=telegram)](https://t.me/QAM_07)
+
+Need a CAPTCHA solving service? Feel free to message anytime 🚀
