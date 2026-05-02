@@ -41,23 +41,6 @@
 | Tencent                | ✅ |
 | Slide CAPTCHA          | ✅ |
 
----
-
-## ⚡ Quick Start
-
-```python
-from captcha_solver import Solver
-
-solver = Solver(api_key="your_api_key")
-
-# Solve reCAPTCHA v2
-token = solver.solve(
-    captcha_type="recaptcha_v2",
-    site_key="6Le-wvkSAAAAAPBMRTvw0Q4Muexq9bi0DJwx_mJ-",
-    page_url="https://example.com",
-)
-print(f"Token: {token}")
-```
 
 ---
 
@@ -69,50 +52,6 @@ print(f"Token: {token}")
 | 🔐 Turnstile Token | Cloudflare challenge response |
 | 🔐 GeeTest Token | GeeTest challenge validation |
 
----
-
-## 🏗️ Architecture
-
-```
-Client Request
-    │
-    ▼
-┌──────────────┐
-│   REST API   │
-└──────┬───────┘
-       │
-       ▼
-┌──────────────┐
-│ Task Router  │  ← Routes to correct solver
-└──────┬───────┘
-       │
-       ▼
-┌──────────────┐
-│   Solvers    │  ← Modular solver plugins
-│  ┌────────┐  │
-│  │ reCAPT │  │
-│  │ Turnst │  │
-│  │ GeeTest│  │
-│  └────────┘  │
-└──────┬───────┘
-       │
-       ▼
-┌──────────────┐
-│  Callback    │  ← Return token to client
-└──────────────┘
-```
-
----
-
-## 🌐 Proxy Configuration
-
-```python
-solver = Solver(
-    api_key="your_api_key",
-    proxy="ip:port:username:password",
-    proxy_type="http"  # http, socks5
-)
-```
 
 ---
 
