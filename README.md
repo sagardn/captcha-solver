@@ -29,6 +29,7 @@
 
 | CAPTCHA Type            | Status |
 |------------------------|--------|
+| Hcaptcha               | ✅ |
 | reCAPTCHA v2           | ✅ |
 | reCAPTCHA v3           | ✅ |
 | Cloudflare Turnstile   | ✅ |
